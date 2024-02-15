@@ -1,0 +1,175 @@
+/* --- ROOT --- */
+
+:root {
+    --main-color: #1c1c1b;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+   
+    min-height: 100vh;
+}
+
+/* --- HEADER --- */
+
+header {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    text-decoration: underline;
+    color: #d6d6cc;
+   
+}
+
+/* --- FOOTER ---*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #d6d6cc
+}
+
+/* --- MAIN ---*/
+
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+   
+    align-items: center;
+   
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-top: 80px;
+    width: 480px;
+    height: 690px;
+    border: 6px solid #d6d6cc;
+    border-radius: 30px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 40px;
+    width: 408px;
+    height: 90px;
+    background-color: #d6d6cc;
+    border-radius: 15px;
+}
+
+#display .previous-operand {
+    color: #1c1c1b;
+    font-size: 14px;
+
+}
+
+#display .current-operand {
+    color: #1c1c1b;
+    font-size: 45px;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 80px;
+    color: #1c1c1b;
+    background-color: #a08c2a;
+    border-radius: 10px;
+    
+    font-weight: 700;
+    font-size: 50px;
+}
+
+button:active {
+    background-color: #7e7029;
+}
+
+.top-button-group {
+    display: flex; 
+    justify-content: flex-start;
+    margin-left: -106px;
+}
+
+.bottom-button-group {
+    display: flex;
+    justify-content: center ;
+    
+}
+
+.button-group-1 {
+    display: flex;
+    margin-top: 30px;
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+.button-group-2 {
+    display: flex;
+    margin-top: 20px;
+    gap: 25px
+}
+
+.button-group-3 {
+    display: flex;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.button-group-4 {
+    display: flex;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.button-group-5 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.white {
+    background-color: #d6d6cc;
+}
+
+.white:active {
+    background-color: #b4b4ab;
+}
+
+#zero {
+    width: 133px;
+}
+
+#equals {
+    width: 133px;
+}
